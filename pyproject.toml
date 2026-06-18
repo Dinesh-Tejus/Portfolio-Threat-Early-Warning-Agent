@@ -1,0 +1,26 @@
+[project]
+name = "portfolio-threat-agent"
+version = "0.1.0"
+description = "Portfolio threat research agent using LangChain, Tavily, OpenAI, Yahoo Finance, Telegram, MongoDB, and LangSmith."
+requires-python = ">=3.11"
+dependencies = [
+  "langchain>=1.0.0",
+  "langchain-openai>=0.3.0",
+  "langchain-tavily>=0.2.0",
+  "langsmith>=0.8.0",
+  "pydantic>=2.0.0",
+  "python-dotenv>=1.0.0",
+  "pymongo>=4.0.0",
+  "rich>=13.0.0",
+  "typer>=0.12.0",
+  "yfinance>=0.2.50",
+]
+
+[project.scripts]
+portfolio-threat-agent = "portfolio_threat_agent.dev_cli:app"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+include = ["portfolio_threat_agent*"]

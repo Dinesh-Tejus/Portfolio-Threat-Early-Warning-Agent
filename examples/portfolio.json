@@ -1,0 +1,11 @@
+{
+  "positions": [
+    { "ticker": "NVDA", "shares": 10, "stop_price": 200.0 },
+    {"ticker": "TSLA", "shares": 50, "stop_price": 390.0 },
+    { "ticker": "ADSK", "shares": 100, "stop_price": 190.0 },
+    { "ticker": "JNJ", "shares": 150, "stop_price": 230.0 }
+
+
+  ]
+}
+

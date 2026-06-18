@@ -1,0 +1,9 @@
+{
+  "positions": [
+    { "ticker": "AMD", "shares": 180, "stop_price": 105.0, "sector": "Semiconductors" },
+    { "ticker": "MRNA", "shares": 90, "stop_price": 70.0, "sector": "Biotechnology" },
+    { "ticker": "TSLA", "shares": 170, "stop_price": 170.0, "sector": "Autos" },
+    { "ticker": "AAPL", "shares": 160, "stop_price": 170.0, "sector": "Technology Hardware" }
+
+  ]
+}

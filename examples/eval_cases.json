@@ -1,0 +1,68 @@
+{
+  "dataset": "portfolio-threat-agent-golden-v2",
+  "description": "Seed historical backtest cases. Each case runs the agent as of an active end_date with Tavily and Yahoo Finance bounded to the historical window, then grades structured threat signals against annotated expected events.",
+  "cases": [
+
+    
+  
+    {
+      "id": "mrna-covid-vaccine-sales-guidance-cut-2024-08-02",
+      "portfolio_path": "examples/golden_portfolio.json",
+      "start_date": "2024-07-26",
+      "end_date": "2024-08-02",
+      "expected_events": [
+        {
+          "ticker": "MRNA",
+          "event_type": "guidance",
+          "catalyst_date": "2024-08-01",
+          "expected_materiality": "MED",
+          "reference_sources": [
+            "https://www.marketwatch.com/story/modernas-stock-slides-12-after-it-lowers-full-year-sales-guidance-64d5a213"
+          ],
+          "notes": "Moderna lowered 2024 product-sales guidance, citing weak COVID vaccine demand and respiratory vaccine competition."
+        }
+      ],
+      "instruction": "Search MRNA and COVID/respiratory vaccine demand themes for product-sales guidance risk."
+    },
+    {
+      "id": "aapl-barclays-downgrade-2024-01-03",
+      "portfolio_path": "examples/golden_portfolio.json",
+      "start_date": "2024-01-01",
+      "end_date": "2024-01-03",
+      "expected_events": [
+        {
+          "ticker": "AAPL",
+          "event_type": "downgrade",
+          "catalyst_date": "2024-01-02",
+          "expected_materiality": "HIGH",
+          "reference_sources": [
+            "https://markets.businessinsider.com/news/stocks/apple-stock-price-market-value-paypal-magnificent-seven-barclays-downgrade-2024-1",
+            "https://www.investopedia.com/5-things-to-know-before-the-stock-market-opens-january-3-2024-8421638"
+          ],
+          "notes": "Barclays downgraded Apple to underweight, citing weak iPhone demand including China concerns."
+        }
+      ],
+      "instruction": "Search AAPL for rating changes, price-target cuts, demand warnings, China exposure, and analyst commentary."
+    },
+    {
+      "id": "nke-guidance-cut-worst-day-2024-06-28",
+      "portfolio_path": "examples/golden_portfolio.json",
+      "start_date": "2024-06-26",
+      "end_date": "2024-06-28",
+      "expected_events": [
+        {
+          "ticker": "NKE",
+          "event_type": "guidance",
+          "catalyst_date": "2024-06-28",
+          "expected_materiality": "HIGH",
+          "reference_sources": [
+            "https://www.axios.com/2024/06/28/nike-sales-drop-nke-q4-2024",
+            "https://www.marketwatch.com/story/nike-s-latest-outlook-cut-undermines-management-s-credibility-market-talk-85720077"
+          ],
+          "notes": "Nike reported Q4 FY2024 earnings after close June 27; the stock crashed 20% on June 28 — its worst single trading day. Catalyst date is June 28 (market event day, aligns with reference articles)."
+        }
+      ],
+      "instruction": "Search NKE for fiscal outlook cuts, sales declines, downgrades, and competition pressure."
+    }
+  ]
+}
